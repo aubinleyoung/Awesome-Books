@@ -51,6 +51,7 @@ const addBook = () => {
 	else {
 		allBooks.unshift(newBook)
 		window.localStorage.setItem('allBooks', JSON.stringify(local_storage))
+		window.location.reload();
 	}
 }
 
@@ -63,8 +64,9 @@ form.addEventListener('submit', (e)=>{
 function remove (buttonId) {
 	allBooks = local_storage.filter((book, index) => index != buttonId)
 	window.localStorage.setItem('allBooks', JSON.stringify(allBooks))
-	setTimeout(update, 0)
+	window.location.reload();
 }
+
 const bookBtns = document.querySelectorAll(".remove");
 bookBtns.forEach((bookBtn) => {
 	bookBtn.addEventListener('click', (e)=>{
