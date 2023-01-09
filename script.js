@@ -52,7 +52,6 @@ const addBook = () => {
 		allBooks.unshift(newBook)
 		window.localStorage.setItem('allBooks', JSON.stringify(local_storage))
 	}
-	setTimeout(update, 0)
 }
 
 form.addEventListener('submit', (e)=>{
