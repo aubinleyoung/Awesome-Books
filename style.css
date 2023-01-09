@@ -1,0 +1,36 @@
+.new-books-container {
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  margin-top: 8px;
+}
+
+.book-title {
+  margin: 2px;
+  padding: 0;
+}
+
+.book-author {
+  margin: 0;
+  padding: 0;
+}
+
+.remove {
+  margin: 5px 0;
+}
+
+.book-container {
+  border-bottom: 1px solid gray;
+  max-width: 50%;
+}
+
+input {
+  margin-top: 8px;
+  padding: 5px;
+}
+
+.add {
+  margin-top: 7px;
+}
