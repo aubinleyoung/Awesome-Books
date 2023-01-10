@@ -1,4 +1,3 @@
-// const addBookBtn = document.querySelector('.add');
 const newBooks = document.querySelector('.new-books-container');
 const title = document.getElementById('title');
 const form = document.querySelector('.form');
