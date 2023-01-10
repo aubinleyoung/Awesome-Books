@@ -47,7 +47,6 @@ const addBook = () => {
   if (exist) return;
 
   /* add book if it doesn't exist already */
-
   allBooks.unshift(newBook);
   window.localStorage.setItem('allBooks', JSON.stringify(localStoragee));
   window.location.reload();
@@ -69,9 +68,7 @@ const bookBtns = document.querySelectorAll('.remove');
 
 bookBtns.forEach((bookBtn) => {
   bookBtn.addEventListener('click', (e) => {
-    const buttonId = e.target.getAttribute('id');
+    const buttonId = parseInt(e.target.getAttribute('id'), 10);
     remove(buttonId);
   });
 });
-
-// window.localStorage.setItem('allBooks', JSON.stringify(allBooks))
