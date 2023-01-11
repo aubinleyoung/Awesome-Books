@@ -8,17 +8,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Awesome books</h1>
-  <div class="new-books-container"></div>
+  <section id="awesome-book-section">
+    <h1 class="awesome-book-title">Awesome books</h1>
+    <div class="new-books-container">
+  
+    </div>
+  
+    <div class="form-container">
+      <h2 class="awesome-book-title">Add a new book</h2>
+      <form action=""class="form">
+        <input type="text" name="Title" id="title" placeholder="Title"  required /><br>
+        <input type="text" name="Author" id="author" placeholder="Author" required /><br>
+        <button type="submit" class="add">Add</button>
+      </form>
+    </div>
+  
+    <div class="wishList"></div>
+  </section>
+ 
 
-  <div class="form-container">
-    <form action=""class="form">
-      <input type="text" name="Title" id="title" placeholder="Title"  required /><br>
-      <input type="text" name="Author" id="author" placeholder="Author" required /><br>
-      <button type="submit" class="add">Add</button>
-    </form>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="script.js" type="module" defer></script>
 </body>
 </html>

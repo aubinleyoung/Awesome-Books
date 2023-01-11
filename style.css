@@ -1,10 +1,66 @@
-.new-books-container {
-  margin: 0;
-  padding: 0;
+* {
+  /* border: 1px solid red;   */
+}
+.display-none{
+  display: none;
+}
+section{
+  margin: auto;
+}
+h2{
+  text-align: center;
+}
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid black;
+  
 }
 
-.form {
-  margin-top: 8px;
+.nav-list{
+  display: flex;
+  padding-left: 0px;
+  /* gap: 20px; */
+
+}
+.list-btn, .add-new-btn{
+  border-right: 2px solid #073763  ;
+  padding: 10px;
+  /* background-color: red; */
+}
+
+.nav-list > li > a:hover, .nav-list > li > a:focus{
+  color:#073763;
+}
+a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.new-books-container {
+  margin: auto;
+  padding: 2px;
+  
+  border: 1px solid black;
+}
+
+.book-container {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+}
+
+.book-container:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.book-container:nth-child(even) {
+  background-color: white;
 }
 
 .book-title {
@@ -17,13 +73,29 @@
   padding: 0;
 }
 
-.remove {
-  margin: 5px 0;
+.book-container:first-child() {
+  background-color: red;
 }
 
-.book-container {
-  border-bottom: 1px solid gray;
-  max-width: 50%;
+.new-book-container {
+  display: flex;
+  align-items: center;
+}
+
+.remove {
+  margin: 5px 0;
+  align-self: flex-end;
+  background: white;
+}
+.remove:hover{
+  cursor: pointer;
+  background: #073763;
+  color: white;
+}
+.title-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 input {
@@ -31,6 +103,32 @@ input {
   padding: 5px;
 }
 
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
 .add {
   margin-top: 7px;
+  align-self: flex-end;
+  background: white;
+}
+.add:hover{
+  cursor: pointer;
+  background: #073763;
+  color: white;
+}
+li {
+  list-style-type: none;
+}
+
+.awesome-book-title {
+  text-align: center;
+}
+
+.contact-text{
+  margin: auto;
+  width: 60%;
 }

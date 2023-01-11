@@ -1,73 +1,75 @@
-const newBooks = document.querySelector('.new-books-container');
-const title = document.getElementById('title');
-const form = document.querySelector('.form');
-const author = document.getElementById('author');
+class BookList {
+  constructor() {
+    this.title = document.getElementById('title');
+    this.form = document.querySelector('.form');
+    this.author = document.getElementById('author');
+    this.newBooks = document.querySelector('.new-books-container');
+    this.storage = JSON.parse(window.localStorage.getItem('allBooks')) || [];
+    this.allBooks = this.storage;
 
-let localStoragee = JSON.parse(window.localStorage.getItem('allBooks'));
-if (
-  localStoragee === null
-  || localStoragee === undefined
-  || localStoragee.length === 0
-) {
-  localStoragee = [];
-}
+    this.bookExist = (existiingTitle,
+      newTitle) => JSON.stringify(existiingTitle) === JSON.stringify(newTitle);
 
-let allBooks = localStoragee;
+    this.form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      this.addBook();
+      this.title.value = '';
+      this.author.value = '';
+    });
 
-/* render each book */
-allBooks.forEach((book, index) => {
-  const displayBook = `
-<div class="book-container">
-<p class="book-title">title: ${book.title}</p>
-<p class="book-author">Author: ${book.author}</p>
-<button class="remove" id=${index}>Remove</button>
-</div>
-`;
-  newBooks.innerHTML += displayBook;
-});
+    this.storage.forEach((book, index) => {
+      if (book.title && book.title !== this.title.value) {
+        const displayBook = `
+      <div class="book-container">
+      <div class="title-author">
+      <p class="book-title">"${book.title}"</p>
+      <p>by</p>
+      <p class="book-author">${book.author}</p>
+      </div>
+       
+        <button class="remove" id=${index}>Remove</button>
+      </div>
+      `;
+        this.newBooks.innerHTML += displayBook;
+      }
+    });
 
-const bookExist = (existingT, newTitle) => JSON.stringify(existingT) === JSON.stringify(newTitle);
+    /* compare and remove */
+    const bookBtns = document.querySelectorAll('.remove');
+    bookBtns.forEach((bookBtn) => {
+      bookBtn.addEventListener('click', (e) => {
+        const buttonId = parseInt(e.target.getAttribute('id'), 10);
+        this.remove(buttonId);
+      });
+    });
+  }
 
-/* add book */
-const addBook = () => {
-  const newBook = {
-    title: title.value,
-    author: author.value,
-  };
-  /* check if book exist */
-  let exist = false;
-  localStoragee.forEach((book) => {
-    if (bookExist(book.title, title.value)) {
-      exist = true;
+  /* add book */
+  addBook(title, author) {
+    /* check if book exist */
+    let exist = false;
+    this.allBooks.forEach((book) => {
+      if (this.bookExist(book.title, this.title.value)) {
+        exist = true;
+      }
+    });
+
+    /* add book if it doesn't exist already */
+    if (exist === false) {
+      const newBook = new BookList(title, author);
+      this.allBooks.unshift({ title: newBook.title.value, author: newBook.author.value });
+      window.localStorage.setItem('allBooks', JSON.stringify(this.storage));
+      window.location.reload();
     }
-  });
+  }
 
-  /* Dont add if book exist */
-  if (exist) return;
-
-  /* add book if it doesn't exist already */
-  allBooks.unshift(newBook);
-  window.localStorage.setItem('allBooks', JSON.stringify(localStoragee));
-  window.location.reload();
-};
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  addBook();
-});
-
-/* remove book */
-function remove(buttonId) {
-  allBooks = localStoragee.filter((book, index) => index !== buttonId);
-  window.localStorage.setItem('allBooks', JSON.stringify(allBooks));
-  window.location.reload();
+  /* remove book */
+  remove(buttonId) {
+    this.allBooks = this.allBooks.filter((book, index) => index !== buttonId);
+    window.localStorage.setItem('allBooks', JSON.stringify(this.allBooks));
+    window.location.reload();
+  }
 }
 
-const bookBtns = document.querySelectorAll('.remove');
-
-bookBtns.forEach((bookBtn) => {
-  bookBtn.addEventListener('click', (e) => {
-    const buttonId = parseInt(e.target.getAttribute('id'), 10);
-    remove(buttonId);
-  });
-});
+/* eslint-disable */
+const freshBook = new BookList();
