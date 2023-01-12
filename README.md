@@ -47,8 +47,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-
-<<<<<<< HEAD
 - [Live Demo Link](https://aubinleyoung.github.io/Awesome-Books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
