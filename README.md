@@ -2,7 +2,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## view of the project
-![all-devices-white (1)]()
+![Not  Yet available]()
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -47,8 +47,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-
-<<<<<<< HEAD
 - [Live Demo Link](https://aubinleyoung.github.io/Awesome-Books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -58,10 +56,6 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
-1. (
-2. `Awesome-Books`
-
-
 ### Prerequisites
 
 In order to run this project :
