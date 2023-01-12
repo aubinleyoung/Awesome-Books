@@ -52,7 +52,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](Not yet available)
+- [Live Demo Link](https://aubinleyoung.github.io/Awesome-Books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
