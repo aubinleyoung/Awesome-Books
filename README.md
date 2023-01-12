@@ -1,15 +1,17 @@
 <a name="readme-top"></a>
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+## view of the project
+![all-devices-white (1)]()
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
@@ -18,16 +20,13 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Awesome-Books] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[Awesome-Books]** is a basic website that allows users to add/remove books from a list
+**[Awesome-Books]** is a basic website that allows users to add/remove books from a list.
 
 ## 🛠 Built With <a name="built-with"></a>
 - **[Html]**
@@ -37,8 +36,6 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **[Plain_JS_with_objects]**
 - **[Plain_JS_with_classes]**
@@ -50,9 +47,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
-- [Live Demo Link](Not yet available)
+- [Live Demo Link](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,11 +56,49 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
 To get a local copy up and running, follow these steps.
-1. Download the zip file or clone with this command `git clone https://github.com/aubinleyoung/Awesome-Books.git`(Make sure you have `Git installed` in your Computer or Install it by following [these steps](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
+1. (
 2. `Awesome-Books`
-3. Open it with the live server
+
+
+### Prerequisites
+
+In order to run this project :
+
+1. Make sure you have `Git installed` in your Computer or Install it by following [these steps](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
+
+### Setup
+
+Clone this repository to your desired folder:
+
+1. Download the zip file or 
+2. clone with this command `git clone https://github.com/aubinleyoung/Awesome-Books.git`
+3. cd Awesome-Books
+
+### Usage
+
+To run the project, execute the following command:
+
+1. Open it with the live server
+
+### Run tests
+
+For tracking linter errors locally you need to follow these steps:
+
+- After cloning the project you need to run this command
+  > npm install
+   `This command will download all the dependencies of the project`
+
+- For tracking the linter errors in HTML file run:
+  > npx hint .
+
+- For tracking the linter errors in CSS file run:
+  > npx stylelint "**/*.{css,scss}"
+
+  - And For tracking the linter errors in JavaScript file run:
+  > npx eslint .
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,19 +106,13 @@ To get a local copy up and running, follow these steps.
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
-👤 **Author1**
+👤 **Aubin SIMPEZE**
 
 - GitHub: [@githubhandle](https://github.com/aubinleyoung)
 - Twitter: [@twitterhandle](https://twitter.com/SimpezeAubin)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/aubin-simpeze-7a5b7a220/)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/til2to)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,7 +121,8 @@ To get a local copy up and running, follow these steps.
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- **[Create_a_complete_website_with_navigation]**
+- [ ] **[More_animations]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,9 +148,11 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+- Hat tip to [Microvers](www.microverse.org)  and all the staff
+- Thanks to My coding Partners 
+- Thanks to My Morning-session-group and Standup-team Partners and
+- Thanks to Code Reviewers
 
-I would like to thank my coding partners to support me when I got stuck and my code reviewers for the advice.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,4 +164,3 @@ I would like to thank my coding partners to support me when I got stuck and my c
 This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
