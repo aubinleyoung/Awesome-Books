@@ -8,12 +8,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section id="awesome-book-section">
+  <header id="header">
     <h1 class="awesome-book-title">Awesome books</h1>
-    <div class="new-books-container">
-  
-    </div>
-  
+    <ul class="nav-list">
+      <li><a href="#" class="list-btn">List</a></li>
+      <li><a href="#" class="add-new-btn">Add new</a></li>
+      <li><a href="#" class="contact-btn">Contact</a></li>
+    </ul>
+  </header>
+  <section id="clock"></section>
+
+  <section id="list-container" class="block1">
+    <h2>All awesome books</h2>
+    <div class="new-books-container"></div>
+  </section>
+  <section id="add-new-container"  class="block2">
     <div class="form-container">
       <h2 class="awesome-book-title">Add a new book</h2>
       <form action=""class="form">
@@ -24,8 +33,25 @@
     </div>
   
     <div class="wishList"></div>
+  </section >
+
+  <section id="contact-container"  class="block3">
+    <h2>Contact informations</h2>
+    <div class="contact-text">
+      <p>Do have any questions or you just want to say "Hello"?
+        You can reach out to us!
+   </p>
+   <ul>
+    <li>Our e-mail: mail@mail.com</li>     
+    <li>Our phone number: 0043586534422</li>     
+    <li>Our address. Streetname 22, 84503 City, Country</li>     
+   </ul>
+    </div>
   </section>
- 
+  
+  <footer>
+    <p>Copyright &copy 2023 Aubin simpeze</p>
+  </footer>
 
   <script src="script.js" type="module" defer></script>
 </body>
