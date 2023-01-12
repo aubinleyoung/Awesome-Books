@@ -1,3 +1,7 @@
+*{
+  /* border: 1px solid black;i */
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap");
 
 body {
@@ -22,6 +26,8 @@ h2 {
   border: 2px solid black;
   background-color: #ddd;
   color: black;
+  width: 88%;
+
 }
 
 #clock {
@@ -35,8 +41,9 @@ h2 {
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   padding-left: 0;
+  
 }
 
 li {
@@ -171,10 +178,192 @@ footer {
   border: 2px solid #000;
   padding: 5px;
   position: fixed;
-  width: 97.5%;
+  width: 92%;
   bottom: 0;
   margin-bottom: 20px;
   background-color: #ddd;
   color: black;
   text-align: center;
+}
+@media only screen and (min-width: 768px){
+  body {
+    background: #064e91;
+    color: white;
+    font-family: "Lato", sans-serif;
+  }
+  
+  section {
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    background-color: #ddd;
+    color: black;
+    width: 95%;
+    position: fixed;
+  }
+  
+  #clock {
+    margin-top: 10px;
+    background-color: #ddd;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    margin-right: 0;
+  }
+  
+  .nav-list {
+    display: flex;
+    padding-left: 0;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  .nav-list a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-list li {
+    padding: 10px;
+    margin: 0 20px 0 20px;
+  }
+  
+  .nav-list > li > a:hover,
+  .nav-list > li > a:focus {
+    color: #064e91;
+  }
+  
+  .new-books-container {
+    margin: auto;
+    padding: 2px;
+    border: 1px solid black;
+  }
+  
+  .book-container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto;
+    color: black;
+  }
+  
+  .book-container:nth-child(odd) {
+    background-color: #ddd;
+  }
+  
+  .book-container:nth-child(even) {
+    background-color: white;
+  }
+  
+  .book-title {
+    margin: 2px;
+    padding: 0;
+  }
+  
+  .book-author {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .new-book-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .remove {
+    margin: 5px 0;
+    align-self: flex-end;
+    color: white;
+    background: black;
+    border: unset;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .remove:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .title-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  input {
+    margin-top: 8px;
+    padding: 5px;
+  }
+  
+  .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .add {
+    margin-top: 7px;
+    align-self: flex-end;
+    background: white;
+    padding: 5px 10px 5px 10px;
+    border: unset;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .add:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .awesome-book-title {
+    text-align: center;
+  }
+  
+  .contact-text {
+    margin: auto;
+    width: 60%;
+  }
+  
+  #add-new-container {
+    display: none;
+  }
+  
+  #contact-container {
+    display: none;
+  }
+  
+  footer {
+    border: 2px solid #000;
+    padding: 5px;
+    position: fixed;
+    width: 97.5%;
+    bottom: 0;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    color: black;
+    text-align: center;
+  }
 }
