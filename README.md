@@ -115,8 +115,9 @@ For tracking linter errors locally you need to follow these steps:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
+- [ ] **[Add_mobile_menu]**
 - [ ] **[More_animations]**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

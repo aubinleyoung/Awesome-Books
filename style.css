@@ -28,7 +28,9 @@ h2 {
   color: black;
   width: 88%;
 
+
 }
+
 
 #clock {
   margin-top: 10px;
@@ -211,7 +213,7 @@ footer {
     width: 95%;
     position: fixed;
   }
-  
+
   #clock {
     margin-top: 10px;
     background-color: #ddd;
