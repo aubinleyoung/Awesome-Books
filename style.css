@@ -26,16 +26,23 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px 10px 20px;
+  padding: 15px 20px 15px 20px;
   border: 2px solid black;
   background-color: #ddd;
   color: black;
-  width: 88%;
+  width: 84%;
   position: fixed;
+  margin: auto;
+  height: 6vh;
 }
-
+#clock{
+  display: none;
+}
 .menu-btn {
   z-index: 100;
+  border: unset;
+  background: none;
+
 }
 
 .nav-mobile-menu {
