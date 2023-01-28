@@ -1,7 +1,7 @@
 // Navigation links
-const listBtn = document.querySelector('.list-btn');
-const addNewBtn = document.querySelector('.add-new-btn');
-const aboutBtn = document.querySelector('.contact-btn');
+const listBtn = document.querySelectorAll('.list-btn');
+const addNewBtn = document.querySelectorAll('.add-new-btn');
+const aboutBtn = document.querySelectorAll('.contact-btn');
 const clock = document.querySelector('#clock');
 
 const listContainer = document.getElementById('list-container');
@@ -39,23 +39,30 @@ const timeNow = () => {
 setInterval(() => {
   timeNow();
 }, 1000);
+listBtn.forEach((lB)=>{
+  lB.addEventListener('click', () => {
+    listContainer.style.display = 'block';
+    contactContainer.style.display = 'none';
+    addNewContainer.style.display = 'none';
+  });
+})
 
-listBtn.addEventListener('click', () => {
-  listContainer.style.display = 'block';
-  contactContainer.style.display = 'none';
-  addNewContainer.style.display = 'none';
-});
+addNewBtn.forEach((aB)=>{
+  aB.addEventListener('click', () => {
+    listContainer.style.display = 'none';
+    contactContainer.style.display = 'none';
+    addNewContainer.style.display = 'block';
+  });
+})
 
-addNewBtn.addEventListener('click', () => {
-  listContainer.style.display = 'none';
-  contactContainer.style.display = 'none';
-  addNewContainer.style.display = 'block';
-});
-aboutBtn.addEventListener('click', () => {
-  listContainer.style.display = 'none';
-  addNewContainer.style.display = 'none';
-  contactContainer.style.display = 'block';
-});
+aboutBtn.forEach((aBtn)=>{
+  aBtn.addEventListener('click', () => {
+    listContainer.style.display = 'none';
+    addNewContainer.style.display = 'none';
+    contactContainer.style.display = 'block';
+  });
+})
+
 
 class BookList {
   constructor() {
