@@ -1,9 +1,8 @@
 <a name="readme-top"></a>
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-![](/assets/images/awesome-books.jpg)
 
 ## view of the project
-![Not  Yet available]()
+![](/assets/images/awesome-books.jpg)
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
