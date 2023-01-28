@@ -8,6 +8,22 @@ const listContainer = document.getElementById('list-container');
 const addNewContainer = document.getElementById('add-new-container');
 const contactContainer = document.getElementById('contact-container');
 
+const mobileMenuBtn = document.querySelectorAll('.menu-btn');
+const mobileNav = document.querySelector('.nav-mobile-menu');
+const menuList = document.querySelectorAll('#menu-list');
+
+// Event for mobile menu
+
+mobileMenuBtn.forEach((btn) => {
+  btn.addEventListener(('click'), () => {
+    mobileNav.classList.toggle('display-nav-mobile-menu');
+  });
+});
+menuList.forEach((list) => {
+  list.addEventListener(('click'), () => {
+    mobileNav.classList.remove('display-nav-mobile-menu');
+  });
+});
 const timeNow = () => {
   const today = new Date().toLocaleDateString('en-GB', {
     day: 'numeric',

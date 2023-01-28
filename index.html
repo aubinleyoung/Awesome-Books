@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book store</title>
   <link rel="stylesheet" href="style.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 </head>
 <body>
   <header id="header">
@@ -15,13 +16,29 @@
       <li><a href="#" class="add-new-btn">Add new</a></li>
       <li><a href="#" class="contact-btn">Contact</a></li>
     </ul>
+    <button class="menu-btn">
+      <img src="./assets/icones/menu.png" alt="" width="50" height="50">
+    </button>
   </header>
+  <div class="nav-mobile-menu">
+    <ul class="nav-list-mobile">
+      <li><a href="#" id="menu-list" class="list-btn">List</a></li>
+      <li><a href="#" id="menu-list" class="add-new-btn">Add new</a></li>
+      <li><a href="#" id="menu-list" class="contact-btn">Contact</a></li>
+    </ul>
+    <button class="menu-btn close-btn">
+      <img src="./assets/icones/cancel.png" alt="" width="50" height="50">
+    </button>
+  </div>
+
   <section id="clock"></section>
 
   <section id="list-container" class="block1">
     <h2>All awesome books</h2>
-    <div class="new-books-container"></div>
-  </section>
+    <div class="new-books-container">
+      
+    </div>
+  </section> 
   <section id="add-new-container"  class="block2">
     <div class="form-container">
       <h2 class="awesome-book-title">Add a new book</h2>
